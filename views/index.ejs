@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD Example</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+  <h1>CRUD Example</h1>
+
+
+
+  <!-- Users List -->
+  <h2>Users</h2>
+  <ul>
+    <% testeexibicao.forEach(testeexibicao => { %>
+      <table>
+        <td><%= testeexibicao.latitude %></td><td><%= testeexibicao.longitude %></td><td><%= testeexibicao.cidade %></td> 
+        
+      </table>
+    <% }); %>
+  </ul>
+</body>
+
+<style>
+td{
+
+  border: 1px solid black;
+}
+  
+</style>
+</html>
